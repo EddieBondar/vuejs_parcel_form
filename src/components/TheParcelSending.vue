@@ -11,49 +11,49 @@
           <div class="flex flex-wrap">
             <!-- Sener City -->
             <div class="text-lg w-1/2 pr-2 pb-2">
-              <label class="pl-2" for="Sender_City">Город отправитель:</label>
+              <label class="pl-2" for="Sender_City">Sender city:</label>
               <br />
               <input
                 v-model="cityL"
                 class="rounded-md w-full px-4 py-4"
                 id="Sender_City"
                 type="text"
-                placeholder="Введите название"
+                placeholder="Enter the title"
               />
             </div>
             <!-- Recipient City -->
             <div class="text-lg w-1/2">
-              <label class="pl-2" for="Recipient_City">Город получатель:</label>
+              <label class="pl-2" for="Recipient_City">Recipient city:</label>
               <br />
               <input
                 v-model="cityR"
                 class="rounded-md w-full px-4 py-4"
                 id="Recipient_City"
                 type="text"
-                placeholder="Введите название"
+                placeholder="Enter the title"
               />
             </div>
             <!-- Type of parcel -->
             <div class="text-lg w-1/2 pr-2 pb-2">
-              <label class="pl-2" for="">Тип посылки:</label>
+              <label class="pl-2" for="">Parcel type:</label>
               <select v-model="typeParcel" class="rounded-md" id="">
-                <option class="border-b-2 rounded-md" value="">
-                  Выберите тип
+                <option class="border-b-2 rounded-md" value="Select type">
+                  Select type
                 </option>
-                <option value="Стандарт">Стандарт</option>
-                <option value="Хрупкое">Хрупкое</option>
-                <option value="Габаритное">Габаритное</option>
-                <option value="Негабаритное">Негабаритное</option>
+                <option value="Standard">Standard</option>
+                <option value="Fragile">Fragile</option>
+                <option value="Dimensional">Dimensional</option>
+                <option value="Oversized">Oversized</option>
               </select>
             </div>
             <!-- Date of dispatch -->
             <div class="text-lg w-1/2">
-              <label class="pl-2" for="">Дата отправки:</label>
+              <label class="pl-2" for="">Dispatch date:</label>
               <input v-model="date" class="rounded-md px-2" type="date" />
             </div>
             <!-- Parcel discription -->
             <div class="text-lg w-full pb-2">
-              <label class="pl-2" for="">Описание посылки:</label>
+              <label class="pl-2" for="">Parcel description:</label>
               <textarea
                 v-model="descriptionParcel"
                 class="bg-zinc-50 w-full rounded-md px-4 py-4"
@@ -71,7 +71,7 @@
               class="bg-blue-500 hover:bg-indigo-500 duration-300 rounded-md px-4 py-4"
               v-on:click="onSubmit"
             >
-              Сохранить
+              Save
             </button>
           </div>
         </form>

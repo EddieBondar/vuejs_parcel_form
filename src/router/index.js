@@ -6,12 +6,6 @@ Vue.use(Router);
 
 const routes = [
   {
-    path: "/table",
-    name: "table",
-    component: () => import("@/views/TableView.vue"),
-  },
-
-  {
     path: "/",
     name: "page",
     component: MainView,

@@ -1,8 +1,10 @@
 <template>
   <div class="w-4/5 mx-auto border rounded-lg drop-shadow-md bg-gray-100">
-    <div class="px-4 py-8">
-      <div class="table">
-        <t-table :headers="headers" :data="items"></t-table>
+    <div class="">
+      <div class="justify-center px-8 py-8">
+        <div class="table mx-auto w-full">
+          <t-table :headers="headers" :data="items"> </t-table>
+        </div>
       </div>
     </div>
   </div>
